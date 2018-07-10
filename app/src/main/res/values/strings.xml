@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">五子棋</string>
+    <string name="desc"/>
+    <string name="black_chess">黑棋</string>
+    <string name="white_chess">白棋</string>
+    <string name="undo">悔棋</string>
+    <string name="suggest">提示</string>
+    <string name="choose_chess">请选择执子</string>
+    <string name="first">先手</string>
+    <string name="after">后手</string>
+    <string name="newRenju">新局</string>
+    <string name="level">级别</string>
+    <string name="rule">规则</string>
+    <string name="black_win">黑棋胜利</string>
+    <string name="white_win">白棋胜利</string>
+    <string name="no_win">和棋</string>
+    <string name="ai_thing">AI思考中</string>
+    <string name="human_human">人人</string>
+    <string name="human_computer">人机</string>
+</resources>

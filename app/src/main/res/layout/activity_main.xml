@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <win.regin.renju.RenjuView
+        android:id="@+id/rvRenju"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/newRenju"
+        style="@style/Renju.EndAdd"
+        android:layout_width="84dp"
+        android:text="@string/newRenju"
+        app:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="6dp"
+        app:layout_constraintEnd_toStartOf="@+id/undo"
+        app:layout_constraintTop_toBottomOf="@+id/rvRenju"
+        app:rippleColor="@color/colorPrimaryDark"/>
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/undo"
+        style="@style/Renju.EndAdd"
+        android:text="@string/undo"
+        app:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="6dp"
+        app:layout_constraintEnd_toStartOf="@+id/suggest"
+        app:layout_constraintTop_toBottomOf="@+id/rvRenju"
+        app:rippleColor="@color/colorPrimaryDark"/>
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/suggest"
+        style="@style/Renju.EndAdd"
+        android:text="@string/suggest"
+        app:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvRenju"
+        app:rippleColor="@color/colorPrimaryDark"/>
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/rule"
+        style="@style/Renju.EndAdd"
+        android:text="@string/rule"
+        app:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/suggest"
+        app:rippleColor="@color/colorPrimaryDark"/>
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/level"
+        style="@style/Renju"
+        app:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="6dp"
+        android:text="初级"
+        app:layout_constraintEnd_toEndOf="@+id/undo"
+        app:layout_constraintStart_toStartOf="@+id/undo"
+        app:layout_constraintTop_toBottomOf="@+id/undo"
+        app:rippleColor="@color/colorPrimaryDark"/>
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/mode"
+        style="@style/Renju"
+        android:text="@string/human_computer"
+        app:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="6dp"
+        app:layout_constraintEnd_toEndOf="@+id/newRenju"
+        app:layout_constraintStart_toStartOf="@+id/newRenju"
+        app:layout_constraintTop_toBottomOf="@+id/newRenju"
+        app:rippleColor="@color/colorPrimaryDark"/>
+
+    <ImageView
+        android:id="@+id/imgFlag"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/desc"
+        app:layout_constraintBottom_toBottomOf="@+id/mode"
+        app:layout_constraintEnd_toStartOf="@+id/newRenju"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/newRenju"
+        app:srcCompat="@drawable/ic_black_chess"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
