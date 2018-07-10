@@ -1,6 +1,7 @@
 测试棋力在相同配置下，初级水平基本相当于五子棋大师的特级大师水平。
 一楼上图：
-![主页面](https://img-blog.csdn.net/20180710103709367?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2NDEzMjQ5/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![主页面.png](https://upload-images.jianshu.io/upload_images/2699961-d54fc8646a47a41e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 
 五子棋的引擎和自定义控件我封装在lib中，可以通过
 `implementation 'win.regin:renju:1.0.0'`来引用，而ndk的调用类Ai是用kotlin编写的，上传的时候传不上去，做为一个jar包引用了。
@@ -535,11 +536,13 @@ public class RenjuView extends View {
 
 ```
 主要都在onDraw方法中：
-![坐标](https://img-blog.csdn.net/20180710105029760?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2NDEzMjQ5/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
-![棋盘线和小黑点](https://img-blog.csdn.net/20180710105042151?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2NDEzMjQ5/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![坐标.png](https://upload-images.jianshu.io/upload_images/2699961-4367044291fe4870.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![棋盘线和小黑点.png](https://upload-images.jianshu.io/upload_images/2699961-0bf35c74ff1b0081.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 用约束布局布置页面:
-![布局页面](https://img-blog.csdn.net/20180710105347449?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2NDEzMjQ5/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![布局页面.png](https://upload-images.jianshu.io/upload_images/2699961-28613e55b0fed0d4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 
 Ai实现类代码，也就是jar包代码，如果需要定制，可修改方法的访问修饰符:
 
@@ -835,3 +838,5 @@ override fun gameOver(winner: Int) {
                 })
     }
 ```
+
+
